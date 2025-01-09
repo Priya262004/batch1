@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(168,177,210,255);
+}
+
+.page-container {
+    border: 10px solid #ffffff; /* Border thickness and color */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevents content from overlapping the border */
+}
+
+.header {
+    background-color: rgba(168,177,210,255);
+    color: blue;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+hr {
+    color: black;
+    height: 5px; /* Thickness */
+    background-color: #ffffff; /* Line color */
+    margin: 20px 0; /* White space around the line */
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-column {
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 0%;
+    flex: 1;
+    max-width: 300px;
+}
+
+.left-column img {
+    width: 100%;
+    height: 35%;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.left-column .caption {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.right-column {
+    background: rgba(168,177,210,255);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex: 2;
+}
+
+.right-column img {
+    width: 90%;
+    height: 40%;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.right-column h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.right-column p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.right-column .button {
+    display: inline-block;
+    background-color: #004080;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.right-column .button:hover {
+    background-color: #003060;
+}
