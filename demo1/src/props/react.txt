@@ -1,0 +1,122 @@
+1.what is props driling and how to avoid
+2.what is default props 
+
+state in react:
+--------------
+->State is used to store the data in the same component and update the data in the samne component.
+->State are mutable(can be read and write)
+->Syntax for creating a state:
+let [inital-value , function , useState(inital-vale)]
+
+
+
+Props drilling is a situation in React where you pass data (props) from a parent component to deeply nested child components. This can lead to inefficient and hard-to-maintain code because intermediate components receive props they don’t need, just to pass them down.
+
+How to Avoid Props Drilling?
+-->You can avoid props drilling using:
+
+1.Context API – Provides a way to pass data deep in the component tree without manually passing props.
+2.Redux or Zustand – Centralized state management tools.
+3.useReducer + Context API – Combines state management with context.
+4.Component Composition – Avoid deep nesting where possible.
+
+
+
+-->Default props help in handling missing values, ensuring components function correctly even if some props are not provided.
+
+Key Benefits:
+1.Prevents Undefined Values – Ensures props always have a value, preventing runtime errors.
+2.Improves Readability – Clearly indicates default values within the component.
+3.Avoids Prop Type Errors – Helps maintain type safety when using PropTypes.
+4.Enhances Component Reusability – Makes components more flexible by handling missing props gracefully.
+
+
+https://cdnjs.com
+https://www.spotify.com/in-en/student
+
+ways of using styles in react:
+1)in-line way
+2)globally css
+3)External way (important)
+
+
+forms in react:
+1.controlled from
+2.uncontrolled form
+
+control from uses useState and on change event and fetch data from the form.
+uses useref hook to fetch data from the form
+
+
+useref hook in react;
+-> ref stands for refernce. 
+-> useref hook uses real-dom.
+-> useref hook used in un-controlled form.
+-> useref is having a property called current.
+-> useref is having a key-word called ref keyword.
+
+note:- useref will returns an object consist of current property.
+
+Syntax:-
+import (useRef) from 'react'
+
+let/var/const identifier = useRef(intial-value)
+
+
+
+list and keys in react:
+list is used to iterate an array of object using map() method
+keys are used to keep track of an element, by using keys we can understand which element is create, update and 
+useContext hook in react:
+-----------------------
+sending the data from the 
+how to avoid props drilling
+----------------------------
+1)useContext hook
+2)HOC(higher order component)
+3)Redux
+
+-->used to pass/share data from one component to multiple component
+without passing an props.
+
+it is used to avoid a props drilling
+
+Syntax:
+step-1: create a context and export it.
+import React from 'react'
+export var/let/const identifier-name = React.createContext()
+
+step-2: use provider to pass a value.
+<identifier-name.provider value={}>
+<Child component/>
+<identifier-name.provider>
+
+step-3: use consumer to consume the value given by the provider.
+<identifier-name.consumer>
+{
+    cbf
+}
+</identifier-name.consumer>
+
+useEffect hook in React 
+1.it is use to provide side effect for function-based component.
+2.in react we can tell to our component to do something after render.
+
+Advantages:
+used for updating dom 
+used for timer
+used for fetching of data
+it is used to avoid react life-cycle.
+1.componentDidMount
+2.componentDidUpdate
+3.componentWillUnMount
+
+Syntax:-
+import {useEffect} from 'react'
+useEffect {cbf,dependancy}
+
+dependancy 3 ways
+1.no dependancy-- component  will render infinite 
+2.empty dependancy-- component will render only once
+3.dependancy with value(props,state)--component will render when value changes.
+

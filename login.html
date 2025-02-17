@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script>
+        function redirectToFlipkart() {
+            window.location.href = "https://www.flipkart.com";
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form onsubmit="redirectToFlipkart(); return false;">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" value="admin" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" value="admin@123" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

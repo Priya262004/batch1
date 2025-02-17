@@ -1,0 +1,183 @@
+JSON(java script object notation)
+
+--> It is a plain text file where the data will be stored in the form of key-value pair where all the keys will be enclosed with double quote.
+--------------------------------
+
+
+how to create a JSON
+-------------------
+step 1:- create a .json file.
+step 2:- to create json we cannot use undefined and function data-type will store data in a [{} , {} , {}]
+
+
+methods of JSON
+--------------
+1)Stringify()
+--> it will convert object to json type.
+2)parse()
+--> it will covert json to object type
+-->two types of API's:
+1)SOAP
+    --> HTTP , XHR(xml,http request(AJAX))
+2)REST
+    --> JSON
+--frame work is a collection of librabry
+librabry it is a collection of functions or methods
+Reactjs:
+1.Reactjs is a librabry.
+2.It is used to develop single page application.
+3.It is a component based application
+components are re-usable
+4.React is declarative.
+5.React was introduced in the year 2013  by facebook(meta) jordan walke.
+6.backbone.js and ember.js
+7.React will render component on the web page without page reloading.
+MVC architecture:
+dependency;-
+1.React:
+----->createElement,all-hooks.
+2.react-dom:
+-->it is used to create virtual-dom.
+3.react-script:
+-->it is use to run,debug,test,eject the react application.
+diffing algorithm
+How to create a React
+--------------------
+two-ways
+1)CDN way
+2)node way
+
+a)npm
+   --> it is use to install,update,delete packages in javascript.
+   -->packages will be installed globally
+
+npm install -g create react-app
+create-react-app app-name
+b)npx
+-->it is used to execute packages without installing
+-->no need to install the packages globally
+
+npx create-react-app app-name
+npm create vite @latest --> it will install the latest version of react
+
+react folder structure
+---------------------
+
+node_modules:-
+-->will store all packages and third party librabry.
+babel
+
+src-folder:-
+-->It is the main folder used for creating components.
+
+index.html file
+-->it is the root file.
+
+eslint (ecma script lint):-
+-->used for debug purpose.
+
+package.json file:-
+-->used to store all dependency and 
+ third-party-librabry
+
+
+ components in react 
+ ------------------
+ -->components are re-usable
+ -->components are basic building blocks in react
+
+ two-types:
+ 1)class based component
+ 2)function based component/presentational component/dumb component.
+
+
+ 1)class based component
+ --> it is the es6 class in js
+ -->it uses render()method
+ render()used to render elements/component on the web-page.
+ -->it is used react-life-cycle.
+-->it is statefull component
+-->constructor is used to store the data.
+-->it uses extend keyword.
+
+import React from 'react'
+class demo extend React.Component{
+    render()
+    return <h1>iam class based component</h1>
+}
+export default demo;
+
+
+2)function based component
+-->it is js pure function
+-->it doesn't have any react-life-cycle.
+-->it doesn't uses render()method
+-->it is stateless component
+   after react 16.8 fbc becomes statefull component because of hooks
+-->no need of using constructor and extend  keyword
+
+import React from 'react'
+
+function demo1()
+{
+    return <h1>iam function based component</h1>
+}
+export default demo1;
+
+import React from 'react'
+
+function demo2()
+{
+    return <h1>iam function based component</h1>
+}
+export default demo2;
+
+ways of writing html:
+1) html
+<h1>hello-world</h1>
+
+2) js(DOM)
+legt h1 = document.createElement("h1")
+console.log(h1)
+h1.textContent = "hello-world"
+
+3)React
+-->using React.createElement("tag-name" , "null" or(id : "demo")" , "hello-world")
+
+eg:- 
+React.createElement("h1" , "null" , "hello")
+React.createElement("h2" , "(id : "demo")" , "hello")
+
+2)JSX (java script XML) 
+-->it is used to create html in react
+-->it is neither a string nor html
+Rules of JSX:-
+1)all the tags should be en-closed
+eg:- </h1> 
+2) if there are more than one element it should be wrapped inside the parent element or fragment.
+ <h1>hello</h1>
+ <h2>hello-world</h2>
+ </div>
+
+ eg:-
+ <>  ---> fragment is used to save memory in virtual-dom
+ <h1></h1>
+ <h2></h2>
+ </>
+
+ 3) use {} brackets for writing expression.
+
+ eg:-
+
+ <h1>{5 + 5}</h1>
+
+ rafce (function-based)
+ rcc(class-based)
+
+ props in react:
+ -->props stands for properties.
+ -->props are use to send data from one component to another component.
+ -->props are uni-direction .
+ -->props are object.
+ -->props are immutable(read-only)
+ 

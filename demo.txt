@@ -1,2 +1,98 @@
+JSON(java script object notation)
 
-Hello World
+--> It is a plain text file where the data will be stored in the form of key-value pair where all the keys will be enclosed with double quote.
+--------------------------------
+
+
+how to create a JSON
+-------------------
+step 1:- create a .json file.
+step 2:- to create json we cannot use undefined and function data-type will store data in a [{} , {} , {}]
+
+
+methods of JSON
+--------------
+1)Stringify()
+--> it will convert object to json type.
+2)parse()
+--> it will covert json to object type
+-->two types of API's:
+1)SOAP
+    --> HTTP , XHR(xml,http request(AJAX))
+2)REST
+    --> JSON
+--frame work is a collection of librabry
+librabry it is a collection of functions or methods
+Reactjs:
+1.Reactjs is a librabry.
+2.It is used to develop single page application.
+3.It is a component based application
+components are re-usable
+4.React is declarative.
+5.React was introduced in the year 2013  by facebook(meta) jordan walke.
+6.backbone.js and ember.js
+7.React will render component on the web page without page reloading.
+MVC architecture:
+dependency;-
+1.React:
+----->createElement,all-hooks.
+2.react-dom:
+-->it is used to create virtual-dom.
+3.react-script:
+-->it is use to run,debug,test,eject the react application.
+diffing algorithm
+How to create a React
+--------------------
+two-ways
+1)CDN way
+2)node way
+
+a)npm
+   --> it is use to install,update,delete packages in javascript.
+   -->packages will be installed globally
+
+npm install -g create react-app
+create-react-app app-name
+b)npx
+-->it is used to execute packages without installing
+-->no need to install the packages globally
+
+npx create-react-app app-name
+npm create vite @latest --> it will install the latest version of react
+
+react folder structure
+---------------------
+
+node_modules:-
+-->will store all packages and third party librabry.
+babel
+
+src-folder:-
+-->It is the main folder used for creating components.
+
+index.html file
+-->it is the root file.
+
+eslint (ecma script lint):-
+-->used for debug purpose.
+
+package.json file:-
+-->used to store all dependency and 
+ third-party-librabry
+
+
+ components in react 
+ ------------------
+ -->components are re-usable
+ -->components are basic building blocks in react
+
+ two-types:
+ 1)class based component
+ 2)function based component/presentational component/dumb component.
+
+
+ 1)class based component
+ --> it is the es6 class in js
+ -->it uses render()method
+ render()used to render elements/component on the web-page.
+ -->it is used react-life-cycle.
